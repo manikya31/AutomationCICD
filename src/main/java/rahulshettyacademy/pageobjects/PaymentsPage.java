@@ -48,7 +48,7 @@ public class PaymentsPage extends AbstractComponent {
 				break;
 			}
 		}
-		scrollBy("window.scrollBy(0,800)");
+		scrollBy(submitBtn);
 		waitMethodForVisibility(submitBtnBy);
 	}
 	public OrderConfirmationPage placeOrder()
