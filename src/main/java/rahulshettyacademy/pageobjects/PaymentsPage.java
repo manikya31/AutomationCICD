@@ -51,9 +51,10 @@ public class PaymentsPage extends AbstractComponent {
 		scrollBy(submitBtn);
 		waitMethodForVisibility(submitBtnBy);
 	}
-	public OrderConfirmationPage placeOrder()
+	public OrderConfirmationPage placeOrder() throws Exception
 	{
 		
+		Thread.sleep(3000);
 		submitBtn.click();
 		return new OrderConfirmationPage(driver);
 	}
